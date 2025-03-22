@@ -7,39 +7,57 @@
     <title>Sign-Up-Form</title>
   </head>
   <body>
-    <div id="container-main">
-      <div class="img">
-        <img
-          src="/img/kelvin-zyteng-bild.jpg"
-          alt="unsplash image by kelvin-zyteng"
-          width="1200"
-        />
-      </div>
-      <div class="text-area">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started. You know you want to.
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <img src="/img/odin-lined.png" alt="Odin logo" width="100px" />
+          <h1>ODIN</h1>
+        </div>
+        <p class="photo-credit">
+          Photo by <em> Kelvin-Zyteng</em> on <em>Unsplash</em>
         </p>
+      </div>
+
+      <div class="right">
+        <div class="intro">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started. You know you want to.
+          </p>
+        </div>
+
         <div class="form">
-          <form action="GET">
+          <form>
             <label> <strong>Let's do this!</strong></label>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name" />
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="last-name" />
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" name="phone-number" id="phone-number" />
-            <label for="password"> PASSWORD</label>
-            <input type="password" name="password" id="password" />
-            <label for="confirm-pw">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm-pw" name="confirm-password" />
+            <div class="form-group">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" name="phone-number" id="phone-number" />
+            </div>
+            <div class="form-group">
+              <label for="password"> PASSWORD</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-pw">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-pw" name="confirm-password" />
+            </div>
           </form>
         </div>
         <div class="button">
-          <button>Create Account</button>
+          <button type="submit" class="btn">Create Account</button>
           <p>Already have an account? Log In</p>
         </div>
       </div>
